@@ -1,0 +1,280 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: none;
+    outline: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+ *::selection{ 
+    background: var(blue);
+    color:rgba(0, 0, 0, 0.618); 
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+html::-webkit-scrollbar-track{
+    background: var(yellow);
+}
+body{
+    background: #111;
+    overflow-x: hidden;
+    padding-left: 35rem;
+}
+header{
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 33rem ;
+    background: rgb(63, 14, 198);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+    /* padding-left: 35rem; */
+}
+ header img{
+     padding: 1rem ;
+    height: 25rem;
+    width: 25rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 0.7rem solid var(yellow);
+    margin-left: 1rem;
+
+}
+.name{
+    font-size: 3rem;
+    color: #fff;
+
+    padding-left: 1rem;
+}
+.front{
+    font-size: 2rem;
+    color: #eee;
+    /* max-width: 90% */
+    padding: 0.5rem 1rem;
+    margin-left: 2rem;
+}
+header nav{
+    width: 100%;
+}
+header nav  ul{
+    list-style: none;
+    padding: 1rem 5rem;
+}
+header nav  ul li a{
+    display: block;
+    padding: 1rem 0;
+    margin: 1.5rem 0;
+    background: #888;
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 5rem;
+    text-align: center;
+}
+header nav  ul li a:hover{
+    background: yellow;
+}
+
+.menu{
+    position: fixed;
+    top: 2rem; 
+    left: 2rem;
+    background: orange;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    z-index: 1000;
+    display: block;
+    border-radius: 2rem;
+}
+.back{
+    position: fixed;
+    top: 2rem; 
+    right: 2rem;
+    background: orange;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    z-index: 1000;
+    display: block;
+    border-radius: 2rem;
+
+}
+section{
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding: 5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.home h3{
+    font-size: 2.5rem;
+    color: #fff;
+    padding: 1rem;
+
+}
+.home h1{
+    font-size: 3.5rem;
+    color: yellow;
+    padding: 1rem;
+}
+
+.home p{
+    font-size: 1.5rem;
+    color: #fff;
+    max-width: 90%;
+    
+}
+
+.home{
+    padding: 0 0rem;
+}
+ body{
+        width: 100%; 
+        height: 100%;
+        font-size: 0%;
+}   
+.menu{
+        display: block;
+ }
+header.toggle{
+        left: 0%;
+}
+
+/* //about section  */
+
+section{
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    /* text-align: center; */
+    padding: 0 1rem;
+}
+.about h1{
+    font-size: 3.5rem;
+    color: yellow ;
+    padding: 1rem;
+}
+.about h3 span{
+    font-size: 2.5rem;
+    color: orangered;
+    padding: 1rem;
+}
+.about h3{
+    font-size: 2.5rem;
+    color: white;
+    padding: 1rem;
+    /* margin-left: 2rem; */
+}
+
+.skills{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding: 0 1rem;}
+    
+.skills h1{
+        font-size: 3.5rem;
+        color: yellow ;
+        padding: 1rem;
+    }
+.skill{
+        font-size: 2.5rem;
+        color: white;
+        padding: 1rem;
+    }
+.contact{
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+        padding: 0 1rem;
+    
+    }
+.contact input{
+        width: 90vw;
+        height: 2rem;
+        border: burlywood;
+        border-radius: 6rem;
+        /* margin-right: 5rem; */
+        max-width: 70%;
+        /* color: green; */
+        /* background: #333; */
+        
+}
+::placeholder {
+        color: red;}
+          
+
+
+.contact h1{
+        font-size: 3.5rem;
+        color: yellow ;
+        padding: 1rem;
+}       
+.contact label{
+    font-size: 3.5rem;
+    color: orangered ;
+    padding: 1rem;
+}       
+
+
+
+@media (max-width:590px){
+
+ header{
+        /* position: fixed; */
+         /* left:-3%; */
+        /* z-index: 1000; */
+
+}
+ body{
+        width: 100%; 
+        height: 100%;
+        
+        background: #111;
+        overflow-x: hidden;
+        padding-left: 1rem;
+
+} 
+#back{
+    left: 80vw;
+} 
+.home{
+    display: none;
+} 
+.hime span{
+    font-size: 1rem;
+}
+ #menu{
+        display: block;
+ }
+header.toggle{
+        left: 0%;
+}
+}
+
+
